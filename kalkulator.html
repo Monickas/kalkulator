@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+	
+		<meta charset = "UTF-8">
+		<link rel="stylesheet" href="style.css">
+		<title> Kalkulator </title>
+	
+	</head>
+		
+	<body>
+		<div class="calculate">
+		<form>
+		<input class="input_id" type='text' id='x'>
+		<input class="input_id" type='text' id='y'>
+		<input type='button' value='+' onclick=a()>
+		<input type='button' value='-' onclick=b()>
+		<input type='button' value='*' onclick=c()>
+		<input type='button' value='/' onclick=d()>
+		<input type='button' value='%' onclick=e()>
+		<input type='reset' name="CE" value='CE'>
+		<input type='button' name="reset" value='C'>
+		</form>
+		<h1 id='wynik'>:-)</h1>
+		</div>
+		
+		<script> 
+		x=parseInt(document.getElementById('x').value);
+		y=parseInt(document.getElementById('y').value);
+		
+		function a() {
+		
+		document.getElementById('wynik').innerHTML = x+y;
+		}
+		function b()
+		{
+		document.getElementById('wynik').innerHTML = x-y;
+		}
+		function c()
+		{
+		document.getElementById('wynik').innerHTML = x*y;
+		}
+		function d()
+		{
+		document.getElementById('wynik').innerHTML = x/y;
+		}
+		function e()
+		{
+		document.getElementById('wynik').innerHTML = x%y;
+		}
+	</script>
+
+	</body>
+		
+</html> 
+
